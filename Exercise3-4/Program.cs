@@ -34,11 +34,12 @@ namespace Exercise3_4
             animals.Add(new Wolf());
             animals.Add(new Pelican() { Age = 2, Weight = 1.2f, WingSpan = 2.75f });
 
-            Console.WriteLine(animals[2].Stats()); 
-            //foreach (var animal in animals)
-            //{
-            //    Console.WriteLine($"{animal.Stats()}");
-            //}
+
+            foreach (var animal in animals)
+            {
+                if (animal is Dog)
+                    Console.WriteLine($"{animal.Stats()}");
+            }
         }
     }
 }
