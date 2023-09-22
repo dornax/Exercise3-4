@@ -11,6 +11,7 @@ namespace Exercise3_4
         //     String expected är det förväntade resultatet som jag jämför med en
         //     en item som ligger på första positionen i listan animals. Genom Stats()
         //     som returnerar en string. Assert metoden utför själva testet.
+        // 17. Animal har inte tillgång till metoden Running. Klassen Dog ärver Animal.
         static void Main(string[] args)
         {
             List<Animal> animals = new List<Animal>();
@@ -37,8 +38,8 @@ namespace Exercise3_4
 
             foreach (var animal in animals)
             {
-                if (animal is Dog)
-                    Console.WriteLine($"{animal.Stats()}");
+                if (animal is Dog castToDog)
+                    Console.WriteLine($"{animal.Stats()} {castToDog.Running()}");
             }
         }
     }

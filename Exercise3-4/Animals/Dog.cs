@@ -19,6 +19,9 @@ namespace Exercise3_4.Animals
         {
             return $"{base.Stats()} MansBestFriend: {MansBestFriend}";
         }
-
+        public string Running()
+        {
+            return "Running around";
+        }
     }
 }
