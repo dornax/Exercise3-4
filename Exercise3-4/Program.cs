@@ -15,7 +15,8 @@ namespace Exercise3_4
 
             foreach (var animal in animals)
             {
-                Console.WriteLine($"{animal}");
+                Console.WriteLine($"{animal,-10} Sound: {animal.DoSound()}");
+
             }
         }
     }
