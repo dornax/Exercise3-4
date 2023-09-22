@@ -7,6 +7,10 @@ namespace Exercise3_4
     {
         //  9. Häst är en annan typ än hundar.
         // 10. Listan måste vara av typ Animal.
+        // 13. UnitTest
+        //     String expected är det förväntade resultatet som jag jämför med en
+        //     en item som ligger på första positionen i listan animals. Genom Stats()
+        //     som returnerar en string. Assert metoden utför själva testet.
         static void Main(string[] args)
         {
             List<Animal> animals = new List<Animal>();
