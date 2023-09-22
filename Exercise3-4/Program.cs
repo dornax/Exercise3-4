@@ -14,10 +14,14 @@ namespace Exercise3_4
             animals.Add(new Wolf());
 
             foreach (var animal in animals)
-            {
-                Console.WriteLine($"{animal,-10} Sound: {animal.DoSound()}");
-
-            }
+                if (animal is IPerson castedToIPerson)
+                {
+                    Console.WriteLine($"{animal,-10} talk: {castedToIPerson.Talk()}");
+                }
+                else
+                {
+                    Console.WriteLine($"{animal,-10} Sound: {animal.DoSound()}");
+                }
         }
     }
 }
