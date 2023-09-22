@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-
+[assembly: InternalsVisibleTo("Tests")]
 namespace Exercise3_4.Animals
 {
     internal abstract class Animal
@@ -16,7 +17,7 @@ namespace Exercise3_4.Animals
 
         public virtual string Stats()
         {
-            return $"{GetType().Name} Name: {Name}  Age: {Age} Weight: {Weight}kg";
+            return $"{GetType().Name} Name: {Name} Age: {Age} Weight: {Weight}kg";
         }
         //public abstract string Stats();
 

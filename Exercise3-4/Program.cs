@@ -1,5 +1,6 @@
 ﻿using Exercise3_4.Animals;
 
+
 namespace Exercise3_4
 {
     internal class Program
@@ -29,10 +30,11 @@ namespace Exercise3_4
             animals.Add(new Wolf());
             animals.Add(new Pelican() { Age = 2, Weight = 1.2f, WingSpan = 2.75f });
 
-            foreach (var animal in animals)
-            {
-                Console.WriteLine($"{animal.Stats()}");
-            }
+            Console.WriteLine(animals[2].Stats()); 
+            //foreach (var animal in animals)
+            //{
+            //    Console.WriteLine($"{animal.Stats()}");
+            //}
         }
     }
 }
