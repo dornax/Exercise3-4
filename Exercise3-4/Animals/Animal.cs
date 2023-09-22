@@ -16,7 +16,7 @@ namespace Exercise3_4.Animals
 
         public virtual string Stats()
         {
-            return $"{GetType().Name} Name: {Name}  Age: {Age} Weight: {Weight}";
+            return $"{GetType().Name} Name: {Name}  Age: {Age} Weight: {Weight}kg";
         }
         //public abstract string Stats();
 

@@ -10,19 +10,29 @@ namespace Exercise3_4
         {
             List<Animal> animals = new List<Animal>();
 
-            animals.Add(new Dog());
-            animals.Add(new Horse());
+            Dog dog1 = new Dog
+            {
+                Name = "Fido",
+                Age = 2,
+                Weight = 4
+            };
+            Dog dog2 = new Dog
+            {
+                Name = "Bob",
+                Age = 3,
+                Weight = 5
+            };
+
+            animals.Add(dog1);
+            animals.Add(dog2);
+            animals.Add(new Horse() { Name = "Hero", Age = 5, Weight = 500 }); ;
             animals.Add(new Wolf());
+            animals.Add(new Pelican() { Age = 2, Weight = 1.2f, WingSpan = 2.75f });
 
             foreach (var animal in animals)
-                if (animal is IPerson castedToIPerson)
-                {
-                    Console.WriteLine($"{animal,-10} talk: {castedToIPerson.Talk()}");
-                }
-                else
-                {
-                    Console.WriteLine($"{animal,-10} Sound: {animal.DoSound()}");
-                }
+            {
+                Console.WriteLine($"{animal.Stats()}");
+            }
         }
     }
 }

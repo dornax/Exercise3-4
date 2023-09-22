@@ -16,7 +16,7 @@ namespace Exercise3_4.Animals
         }
         public override string Stats()
         {
-            return $"{base.Stats()} Wingspan: {WingSpan}";
+            return $"{base.Stats()} Wingspan: {WingSpan}m";
         }
     }
 }
