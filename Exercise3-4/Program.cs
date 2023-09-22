@@ -4,7 +4,8 @@ namespace Exercise3_4
 {
     internal class Program
     {
-
+        //  9. Häst är en annan typ än hundar.
+        // 10. Listan måste vara av typ Animal.
         static void Main(string[] args)
         {
             List<Animal> animals = new List<Animal>();
